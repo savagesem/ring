@@ -1,6 +1,6 @@
-import {reducer} from "../reducers/reducer";
+import {reducer} from "./reducer";
 import {DRAG_START, DRAG_FINISH} from "../actions/dnd";
-import {initialState} from "./mocks/stateMock";
+import {initialState} from "../mocks/stateMock";
 
 const state = {
     ...initialState, dnd: {

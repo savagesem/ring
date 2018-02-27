@@ -1,7 +1,7 @@
 import {ADD_COLUMN, REMOVE_COLUMN} from "../actions/columns";
 import {ADD_CARD} from "../actions/cards";
 import {DRAG_START, DRAG_FINISH} from "../actions/dnd";
-import {initialState} from "../__tests__/mocks/stateMock";
+import {initialState} from "../mocks/stateMock";
 
 export const reducer = (state = initialState, action) =>{
     let newColumns;
