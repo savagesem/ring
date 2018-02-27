@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import {Viewport} from "./styled/Viewport";
+import {Column} from "./styled/Column";
+import {Input} from "./styled/Input";
 import './App.css';
+
+const columns = [
+    "a",
+    "a",
+    "a",
+    "a",
+    "a",
+    "a",
+    "a"
+];
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Viewport>
+            {columns.map(col => <Column><Input placeholder="Add ..."/></Column>)}
+        </Viewport>
     );
   }
 }
